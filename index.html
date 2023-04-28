@@ -1,0 +1,70 @@
+<!doctype html> <!--pasted from Bootstrap-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  
+
+  <!--Elements are located here-->
+  <body>
+
+<!--This Container below includes a FORM with Number TextBox, Buttons, & Answer Textbox -->
+    <main class="container">
+        <div class="row">
+            <div class="col">
+               
+
+               <!--The FORM Starts Here!-->
+                <form>
+
+
+                    <!--Number 1 TextBox-->
+                    <div>
+                        <label for="numTextbox">Number 1</label>
+                        <input id="numTextbox1" class="form-control" type="number">
+                    </div>
+
+
+                    <!--Number 2 TextBox-->
+                    <div>
+                        <label for="numTextbox">Number 2</label>
+                        <input id="nnumTextbox2" class="form-control" type="number">
+                    </div>
+
+
+                    <!--buttons-->
+
+                    <div class="mt-1">
+                        <button id="addBtn"      class="btn btn-primary" type="button">ADD</button>
+                        <button id="subtractBtn" class="btn btn-primary" type="button">SUBTRACT</button>
+                        <button id="multiplyBtn" class="btn btn-primary" type="button">MULTIPLY</button>
+                        <button id="divideBtn"   class="btn btn-primary" type="button">DIVIDE</button>
+                    </div>
+
+
+                    <!--Answer TextBox-->
+                    <div>
+                    <label for="answerTextbox">Awnser</label>
+                    <input id="answerTextbox1" class="form-control">
+                    </div>
+
+
+                </form> <!--End of FORM-->
+                
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--Bootstrap Link for styling & formatting here:-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script> <!--Connects to my Javascript page-->
+
+  </body> <!--End of Body-->
+
+</html>
