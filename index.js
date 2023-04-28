@@ -47,9 +47,9 @@ window.onload = init; // When website loads
 function init() {
 
     addBtn.onclick       = whenaddBtnClicked;        // add Button is clicked
-    //subtractBtn.onclick  = whensubtractBtnClicked;   // subtract Button is clicked
-    //multiplyBtn.onclick  = whenmultiplyBtnClicked;   // multiply Button is clicked
-   //divideBtn.onclick    = whendivideBtnClicked;     // divide Button is clicked
+    subtractBtn.onclick  = whensubtractBtnClicked;   // subtract Button is clicked
+    multiplyBtn.onclick  = whenmultiplyBtnClicked;   // multiply Button is clicked
+    divideBtn.onclick    = whendivideBtnClicked;     // divide Button is clicked
 
 }
 
@@ -59,9 +59,8 @@ function init() {
 // 2. Math & Answer Buttons (BTS) Calculating Answers
 
 
+
 // "ADD" Button:
-// - When "add" button is clicked let the answer (answerTextbox)
-//   be num1 + num2 after the "answer" button is clicked.
 
 function whenaddBtnClicked() {
 // a.
@@ -76,4 +75,56 @@ function whenaddBtnClicked() {
 // DONE
 }
 
-//console.log("the index.js has finished executing...");
+
+
+// "SUBTRACT" Button:
+
+function whensubtractBtnClicked() {
+    // a.
+        let num1value = parseFloat(num1.value); // This converts the num1 value into a number
+        let num2value = parseFloat(num2.value); // This converts the num2 value into a number
+    // b.
+        let difference = (num1value - num2value); // This function calculates the difference of the two number values
+    // c.
+        answerTextbox.value = (difference); // This will display the difference/result in the answerTextbox
+    
+        console.log(difference) // This will dislay it in the console
+    // DONE
+    }
+
+
+
+    // "MULTIPLY" Button:
+
+function whenmultiplyBtnClicked() {
+    // a.
+        let num1value = parseFloat(num1.value); // This converts the num1 value into a number
+        let num2value = parseFloat(num2.value); // This converts the num2 value into a number
+    // b.
+        let product = (num1value * num2value); // This function calculates the product of the two number values
+    // c.
+        answerTextbox.value = (product); // This will display the product/result in the answerTextbox
+    
+        console.log(product) // This will dislay it in the console
+    // DONE
+    }
+
+
+
+    // "DIVIDE" Button:
+
+function whendivideBtnClicked() {
+    // a.
+        let num1value = parseFloat(num1.value); // This converts the num1 value into a number
+        let num2value = parseFloat(num2.value); // This converts the num2 value into a number
+    // b.
+        let quotient = (num1value / num2value); // This function calculates the quotient of the two number values
+    // c.
+        answerTextbox.value = (quotient); // This will display the quotient/result in the answerTextbox
+    
+        console.log(quotient) // This will dislay it in the console
+    // DONE
+    }
+
+
+console.log("the index.js has finished executing..."); // Final end Message in the console
